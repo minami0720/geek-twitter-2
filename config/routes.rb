@@ -9,13 +9,14 @@ Rails.application.routes.draw do
   resources :books do
     resources :likes, only: [:create, :destroy]
 
+
 root 'hello#index'
 
 end
 
-root 'lectures#index'
-get 'lectures/index'  => 'lectures#index'
-get 'lectures/new'  => 'lectures#new'
-post 'lectures/new'  => 'lectures#create'
+root 'books#index'
+get 'books/index'  => 'books#index'
+get 'books/new'  => 'books#new'
+post 'books/new'  => 'books#create'
 
 end
