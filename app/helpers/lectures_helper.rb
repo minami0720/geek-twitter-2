@@ -1,3 +1,4 @@
+module LecturesHelper
 def getPercent(number) 
     if number.present?
       calPercent = number/5.to_f * 100
@@ -10,4 +11,4 @@ def getPercent(number)
       return 0
     end
   end
- 
+end

@@ -1,5 +1,6 @@
 
 class LecturesController < ApplicationController
+  include LecturesHelper
   def index
    @lectures = Lecture.all
   end
